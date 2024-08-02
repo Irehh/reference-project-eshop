@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title','E-SHOP || HOME PAGE')
+@section('title',' || HOME PAGE')
 @section('main-content')
 <!-- Slider Area -->
 @if(count($banners)>0)
@@ -121,7 +121,7 @@
                                                 @elseif($product->condition=='new')
                                                     <span class="new">New</span
                                                 @elseif($product->condition=='hot')
-                                                    <span class="hot">Hot</span>
+                                                    <span class="new">Hot</span>
                                                 @else
                                                     <span class="price-dec">{{$product->discount}}% Off</span>
                                                 @endif
